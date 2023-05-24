@@ -68,3 +68,7 @@ For support, send an email to prharshith38@gmail.com
 ## Acknowledgements
 
  - [Readme Editor For This Repository](https://readme.so)
+
+## License
+
+[MIT License](https://github.com/prharshith/blazelink/blob/main/LICENSE)
