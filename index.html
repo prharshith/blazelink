@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
 
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      animation: heartbeat 1.5s ease-in-out infinite;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .countdown {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coming Soon</h1>
+    <p>We're working on something amazing!</p>
+    <div class="countdown">
+      <p id="days"></p>
+      <p id="hours"></p>
+      <p id="minutes"></p>
+      <p id="seconds"></p>
+    </div>
+  </div>
+
+  <script>
+    // Set the countdown date and time
+    var countdownDate = new Date("2023-06-01T00:00:00Z").getTime();
+
+    // Update the countdown every 1 second
+    var countdown = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countdownDate - now;
+
+      // Calculations for days, hours, minutes, and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the countdown
+      document.getElementById("days").innerHTML = days + "d";
+      document.getElementById("hours").innerHTML = hours + "h";
+      document.getElementById("minutes").innerHTML = minutes + "m";
+      document.getElementById("seconds").innerHTML = seconds + "s";
+
+      // When the countdown is over, display a message
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("days").innerHTML = "";
+        document.getElementById("hours").innerHTML = "";
+        document.getElementById("minutes").innerHTML = "";
+        document.getElementById("seconds").innerHTML = "";
+        document.querySelector(".countdown").innerHTML = "Stay tuned for updates!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
