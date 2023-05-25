@@ -19,7 +19,7 @@ https://blazelink.pages.dev
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://blazelink.pages.dev/images/webss/webimg.png)
 ## Project Self Deployment
 
 Blaze Link offers flexible deployment options and easy customization. Built on HTML, it can be deployed anywhere you prefer!
