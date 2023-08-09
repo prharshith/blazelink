@@ -55,9 +55,9 @@ Blaze Link is designed to deliver an exceptional user experience with its fast p
 ## Authors
 #### P R HARSHITH
 - [@prharshith](https://www.github.com/prharshith) - [Github]
-- [Portfolio Website](https://prharshith.tk)
+- [Portfolio Website](https://prharshith.pages.dev)
 - [Instagram](https://instagram.com/p.r_harshith)
-- [Gitlab Profile](https://www.gitlab.com/prharshith)
+- [Twitter Profile](https://www.x.com/prharshith37)
 
 
 ## Support
